@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agilsys Assignment</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body>
+        <!---navbar-->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i>Agilsys</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!---Search bar-->
+                <form class="form-inline mr-auto">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Searching...." aria-label="Search">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                </form>
+                <!---navigation links-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Schedular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Family</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Student</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 custom-user">
+                    <i class="fas fa-bell"></i>
+                    <button class="btn my-2 my-sm-0" type="button">
+                        <i class="fa fa-user" aria-hidden="true"> Shivani</i>
+                    </button>
+                </form> 
+            </div>
+        </nav>
+        <!---sidebar-->
+        <div class="sidebar">
+            <ul>
+                <li><i class="fas fa-clock"></i></li>
+                <li><i class="fas fa-envelope"></i></li>
+                <li><i class="fas fa-calendar"></i></li>
+                <li><i class="fas fa-map-marker-alt"></i></li>
+                <li><i class="fas fa-filter"></i></li>
+                <li><i class="fas fa-user-graduate"></i></li>
+                <li><i class="fas fa-user"></i></li>
+                <li><i class="fas fa-users"></i></li>
+                <li><i class="fas fa-cog"></i></li>
+                <li><i class="fas fa-user-graduate"></i></li>
+                <li><i class="fas fa-calendar"></i></li>
+                <li><i class="fas fa-user"></i></li>
+            </ul>
+        </div>
+        <!---main content-->
+        <div class="container header-container">
+            <div class="header">
+                <div class="sort-options">
+                    Sort By Name ↓ Plant City ↑ Postal/Zip Code ↑ Instrument ↑ Newest ↑ Active ↑
+                    <span class="view-option">View By : <i class="fas fa-user-graduate"></i></span>
+                    <button>Import</button>
+                    <button>Download CSV</button>
+                    <button> + New Student</button>
+                </div>
+            </div>
+        </div>
+        <!----sub content-->
+        <div class="container">
+            <div class="forms-container">
+                <div class="form-container">
+                    <h2>Search Filter</h2><hr>
+                    <div class="input-fields">
+                        <label for="student-name">Student Name</label>
+                        <input type="text" name="student-name">
+                        <label for="city">City/Province/State/Country</label>
+                        <input type="text" name="city">
+                        <label for="plan">Plan</label>
+                        <select id="plan" name="plan">
+                            <option>All</option>
+                            <option>Dumy</option>
+                            <option>Demo</option>
+                            <option>Demo</option>
+                        </select>
+                        <label for="enroll">Enrollment Type</label>
+                        <select id="enroll" name="enroll">
+                            <option>All</option>
+                            <option>Dumy</option>
+                            <option>Demo</option>
+                            <option>Demo</option>
+                        </select>
+                        <label for="equip">Select Instrument</label>
+                        <select id="equip" name="equip">
+                            <option>All</option>
+                            <option>Dumy</option>
+                            <option>Demo</option>
+                            <option>Demo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-1-container">
+                <div class="form-container-circle">
+                    <div class="circle circle-1">
+                        <span>Total Students</span>
+                        <span>2018</span>
+                    </div>
+                    <div class="circle circle-2">
+                        <span>Total Students</span>
+                        <span>2018</span>
+                    </div>
+                    <div class="circle circle-3">
+                        <span>Total Students</span>
+                        <span>2018</span>
+                    </div>
+                </div>
+                <div class="form-2-container">
+                    <div class="form-container form-container-user">
+                        <div class="user-icon">
+                            <span><i class="fas fa-user-graduate"></i></span>
+                        </div>
+                        <div class="user-details">
+                            <h2>Ram</h2>
+                            <p><i class="fas fa-map-marker-alt"></i>Ayodhya</p>
+                            <p>Phone: (455) 354-325</p>
+                            <p>Email: xyx232@gmail.com</p>
+                            <p>Age: Male</p>
+                            <p>Plan: Trial</p>
+                            <p>Instrument: Dumy</p>
+                            <p>Member Since: 9/02/2024</p>
+                            <button class="active-button">Active</button>
+                        </div>
+                    </div>
+                    <div class="form-container form-container-user">
+                        <div class="overlay"></div>
+                        <div class="form-3-container">
+                            <div class="user-icon">
+                                <span><i class="fas fa-user-graduate"></i></span>
+                            </div>
+                            <div class="user-details">
+                                <h2>Shayam</h2>
+                                <p><i class="fas fa-map-marker-alt"></i>Ayodhya</p>
+                                <p>Phone: (455) 354-325</p>
+                                <p>Email: xyx232@gmail.com</p>
+                                <p>Age: Male</p>
+                                <p>Plan: Trial</p>
+                                <p>Instrument: Dumy</p>
+                                <p>Member Since: 9/02/2024</p>
+                                <button class="active-button">Active</button>
+                            </div>
+                            <div class="options-label">
+                                <h3>Shivani Gupta</h3>
+                                <label>Profile</label>
+                                <label>Chat</label>
+                                <label>Edit Student</label>
+                                <label>Reset Password</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-container form-container-user">
+                        <div class="user-icon">
+                            <span><i class="fas fa-user-graduate"></i></span>
+                        </div>
+                        <div class="user-details">
+                            <h2>Shiv</h2>
+                            <p><i class="fas fa-map-marker-alt"></i>Ayodhya</p>
+                            <p>Phone: (455) 354-325</p>
+                            <p>Email: xyx232@gmail.com</p>
+                            <p>Age: Male</p>
+                            <p>Plan: Trial</p>
+                            <p>Instrument: Dumy</p>
+                            <p>Member Since: 9/02/2024</p>
+                            <button class="active-button">Active</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

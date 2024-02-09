@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*navbar*/
+.navbar{
+    color: darkcyan;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
+}
+.navbar-brand{
+    color: darkcyan;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.navbar-brand:hover{
+    color:#d2691e;
+}
+.navbar i{
+    margin-right: 10px;
+}
+/*---search bar--*/
+.navbar .form-inline .input-group .form-control{
+    border: 1px solid darkcyan;
+    border-radius: 40px 0px 0px 40px;
+}
+.navbar .form-inline .input-group .input-group-text{
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+}
+/*---navigation links--*/
+.navbar .navbar-nav li.nav-item a.nav-link{
+    border: 1px solid darkcyan;
+    background-color: #fff;
+    color: darkcyan;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 40px;
+}
+.navbar .navbar-nav li.nav-item a.nav-link:hover,
+.navbar .custom-user button:hover{
+    background-color: #d2691e;
+    color: #fff;
+    border: none;
+}
+.navbar .fa-bell{
+    color: darkcyan;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.navbar .custom-user button{
+    color: darkcyan;
+    border-color: darkcyan;
+}
+/*-----sidebar-----*/
+.sidebar{
+    height: 100vh;
+    width: 60px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #fff;
+    color: darkcyan;
+    padding-top: 20px;
+    box-shadow: 2px 0 4px rgb(0, 0, 0, 0.2);
+    z-index: 900;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+}
+.sidebar ul li{
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.sidebar ul li:hover,
+.sort-options button:hover,
+.user-details .active-button:hover{
+    background-color: #d2691e;
+    color: #fff;
+}
+/* main content*/
+.container{
+    display: flex;
+    padding-top: 20px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 90px;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.header .view-option{
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.sort-options button{
+    color: #fff;
+    background-color: darkcyan;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/*----sub content---*/
+.form-container{
+    height: 450px;
+    width: 290px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    align-items: center;
+    margin-right: 20px;
+}
+.form-container h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: darkcyan;
+}
+.form-container .input-fields label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-container .input-fields input,
+.form-container .input-fields select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+}
+.form-container-circle{
+    display: flex;
+    margin-left: 230px;
+    margin-bottom: 30px;
+}
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.circle-1{
+    background-color: #190a6e;
+    color: #fff;
+}
+.circle-2{
+    background-color: #0a6e23;
+    color: #fff;
+}
+.circle-3{
+    background-color: #94480a;
+    color: #fff;
+}
+.form-2-container{
+    display: flex;
+}
+.user-icon{
+    width: 90px;
+    height: 90px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 80px;
+    font-size: 40px;
+    padding: 10px;
+    color: #fff;
+}
+.user-details{
+    text-align: center;
+    margin-top: 20px;
+}
+.user-details p{
+    margin-bottom: 10px;
+}
+.user-details .active-button{
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 20px;
+}
+.form-container-user{
+    position: relative;
+}
+.form-3-container{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 3, 3, 0.5);
+    z-index: 999;
+}
+.options-label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: calc(100% -20px);
+    padding: 10px;
+    z-index: 1000;
+}
+.options-label h3{
+    text-align: center;
+    color: #fff;
+}
+.options-label label{
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: #333;
+    border: 2px solid #333;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
